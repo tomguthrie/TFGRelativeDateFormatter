@@ -1,4 +1,7 @@
 # TFGRelativeDateFormatter
+[![Build
+Status](https://travis-ci.org/tomguthrie/TFGRelativeDateFormatter.svg?branch=master)](https://travis-ci.org/tomguthrie/TFGRelativeDateFormatter)
+
 **Mail.app style relative date formatter.**
 
 ## Usage
