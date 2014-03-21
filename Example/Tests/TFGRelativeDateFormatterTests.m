@@ -14,6 +14,8 @@
     NSDateComponents *components;
     NSDate *fromDate;
     TFGRelativeDateFormatter *formatter;
+    TFGRelativeDateFormatter *gbFormatter;
+    NSString *result;
 }
 
 @end
@@ -29,53 +31,69 @@
     [components setYear:2013];
     [components setMonth:1];
     [components setDay:8];
-    [components setHour:0];
-    [components setMinute:0];
-    [components setSecond:0];
     fromDate = [calendar dateFromComponents:components];
 
     formatter = [[TFGRelativeDateFormatter alloc] init];
-    formatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_GB"];
+    formatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US"];
     formatter.calendar = calendar;
+
+    gbFormatter = [[TFGRelativeDateFormatter alloc] init];
+    gbFormatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_GB"];
+    gbFormatter.calendar = calendar;
 }
 
-- (void)testReturnsTimeWhenSameDay
+- (void)testDateIsSameDayReturnsTime
 {
     NSDate *date = [calendar dateFromComponents:components];
-    NSString *string = [formatter stringForDate:date fromDate:fromDate];
-    XCTAssertEqualObjects(string, @"00:00");
+    result = [formatter stringForDate:date fromDate:fromDate];
+    XCTAssertEqualObjects(result, @"12:00 AM");
+
+    result = [gbFormatter stringForDate:date fromDate:fromDate];
+    XCTAssertEqualObjects(result, @"00:00");
 }
 
-- (void)testReturnsYesterdayWhenLessThanADayAgo
+- (void)testDateIsYesterdayReturnsYesterday
 {
     [components setDay:7];
     NSDate *date = [calendar dateFromComponents:components];
-    NSString *string = [formatter stringForDate:date fromDate:fromDate];
-    XCTAssertEqualObjects(string, @"Yesterday");
+    result = [formatter stringForDate:date fromDate:fromDate];
+    XCTAssertEqualObjects(result, @"Yesterday");
+
+    result = [gbFormatter stringForDate:date fromDate:fromDate];
+    XCTAssertEqualObjects(result, @"Yesterday");
 }
 
-- (void)testReturnsDayOfWeekIfLessThanAWeekAgo
+- (void)testDateIsSameWeekReturnsDayOfWeek
 {
     [components setDay:2];
     NSDate *date = [calendar dateFromComponents:components];
-    NSString *string = [formatter stringForDate:date fromDate:fromDate];
-    XCTAssertEqualObjects(string, @"Wednesday");
+    result = [formatter stringForDate:date fromDate:fromDate];
+    XCTAssertEqualObjects(result, @"Wednesday");
+
+    result = [gbFormatter stringForDate:date fromDate:fromDate];
+    XCTAssertEqualObjects(result, @"Wednesday");
 }
 
-- (void)testReturnsTheDayOfTheMonthIfSameYear
+- (void)testDateIsSameYearReturnsDayAndMonth
 {
     [components setDay:1];
     NSDate *date = [calendar dateFromComponents:components];
-    NSString *string = [formatter stringForDate:date fromDate:fromDate];
-    XCTAssertEqualObjects(string, @"1 Jan");
+    result = [formatter stringForDate:date fromDate:fromDate];
+    XCTAssertEqualObjects(result, @"Jan 1");
+
+    result = [gbFormatter stringForDate:date fromDate:fromDate];
+    XCTAssertEqualObjects(result, @"1 Jan");
 }
 
-- (void)testReturnsFullDateIfLastYear
+- (void)testDateIsNotTheSameYearReturnsTheFullDate
 {
     [components setDay:0];
     NSDate *date = [calendar dateFromComponents:components];
-    NSString *string = [formatter stringForDate:date fromDate:fromDate];
-    XCTAssertEqualObjects(string, @"31/12/2012");
+    result = [formatter stringForDate:date fromDate:fromDate];
+    XCTAssertEqualObjects(result, @"12/31/12");
+
+    result = [gbFormatter stringForDate:date fromDate:fromDate];
+    XCTAssertEqualObjects(result, @"31/12/2012");
 }
 
 @end
