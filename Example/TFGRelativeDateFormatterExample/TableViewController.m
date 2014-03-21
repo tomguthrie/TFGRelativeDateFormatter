@@ -25,26 +25,27 @@
 {
     [super viewDidLoad];
 
+    NSMutableArray *data = [NSMutableArray array];
+
+    self.dateFormatter = [[NSDateFormatter alloc] init];
+    [self.dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+
     NSDate *today = [NSDate date];
     NSCalendar *calendar = [TFGRelativeDateFormatter sharedFormatter].calendar;
-
     NSDateComponents *components = [[NSDateComponents alloc] init];
-    [components setDay:-1];
-    NSDate *yesterday = [calendar dateByAddingComponents:components toDate:today options:0];
 
-    [components setDay:-6];
-    NSDate *week = [calendar dateByAddingComponents:components toDate:today options:0];
-
-    [components setDay:-8];
-    NSDate *month = [calendar dateByAddingComponents:components toDate:today options:0];
+    for (int i=0; i < 9; ++i) {
+        [components setDay:-i];
+        [data addObject:[calendar dateByAddingComponents:components toDate:today options:0]];
+    }
 
     [components setYear:-1];
-    NSDate *year = [calendar dateByAddingComponents:components toDate:today options:0];
+    [data addObject:[calendar dateByAddingComponents:components toDate:today options:0]];
 
-    self.data = @[ today, yesterday, week, month, year ];
-    self.dateFormatter = [[NSDateFormatter alloc] init];
-    [self.dateFormatter setDateStyle:NSDateFormatterShortStyle];
-    [self.dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+    [components setYear:-2];
+    [data addObject:[calendar dateByAddingComponents:components toDate:today options:0]];
+
+    self.data = [data copy];
 }
 
 #pragma mark - UITableViewDataSource
