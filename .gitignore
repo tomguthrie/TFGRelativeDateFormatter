@@ -18,3 +18,6 @@ profile
 DerivedData
 *.hmap
 *.ipa
+
+Example/Podfile.lock
+Example/Pods

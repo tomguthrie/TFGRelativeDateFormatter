@@ -88,7 +88,7 @@
 
 - (NSString *)stringForObjectValue:(NSDate *)value
 {
-    NSAssert([value isKindOfClass:[NSDate date]], @"value must be an NSDate");
+    NSAssert([value isKindOfClass:[NSDate class]], @"value must be an NSDate");
 
     return [self stringForDate:value];
 }
