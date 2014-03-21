@@ -4,7 +4,7 @@
 ## Usage
 
 ```objective-c
-#import <TFGRelativeDateFormatter/TFGRelativeDateFormatter.h>
+#import "TFGRelativeDateFormatter.h"
 
 NSDate *date = ...;
 TFGRelativeDateFormatter *formatter = [[TFGRelativeDateFormatter alloc] init];
