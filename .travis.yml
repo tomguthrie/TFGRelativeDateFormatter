@@ -2,6 +2,6 @@ language: objective-c
 before_install:
   - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-  - cd Example && pod install
+  - cd Example && pod install && cd $TRAVIS_BUILD_DIR
 script:
-  - xcodebuild -workspace TFGRelativeDateFormatterExample.xcworkspace -scheme 'TFGRelativeDateFormatterExample' -sdk 'iphonesimulator' -configuration Release clean test | xcpretty -c
+  - xcodebuild -workspace ./Example/TFGRelativeDateFormatterExample.xcworkspace -scheme 'TFGRelativeDateFormatterExample' -sdk 'iphonesimulator' -configuration Release clean test | xcpretty -c ; exit ${PIPESTATUS[0]}
