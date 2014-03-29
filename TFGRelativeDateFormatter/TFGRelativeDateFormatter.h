@@ -30,7 +30,7 @@
  *
  * @warning TFGRelativeDateFormatter is not thread safe due to its use of NSDateFormatter.
  */
-@interface TFGRelativeDateFormatter : NSFormatter
+@interface TFGRelativeDateFormatter : NSObject
 
 /**
  * Returns a shared instance of TFGRelativeDateFormatter for use on the main thread.

@@ -84,15 +84,6 @@
     [self.monthFormatter setDateFormat:[NSDateFormatter dateFormatFromTemplate:@"d MMM" options:0 locale:_locale]];
 }
 
-#pragma mark - NSFormatter
-
-- (NSString *)stringForObjectValue:(NSDate *)value
-{
-    NSAssert([value isKindOfClass:[NSDate class]], @"value must be an NSDate");
-
-    return [self stringForDate:value];
-}
-
 #pragma mark - Formatting
 
 - (NSString *)stringForDate:(NSDate *)date
