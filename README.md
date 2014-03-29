@@ -1,17 +1,23 @@
 # TFGRelativeDateFormatter
+
 [![Build
 Status](https://travis-ci.org/tomguthrie/TFGRelativeDateFormatter.svg?branch=master)](https://travis-ci.org/tomguthrie/TFGRelativeDateFormatter)
 
-**Mail.app style relative date formatter.**
+Mail.app style relative date formatter.
 
 ## Usage
 
 ```objective-c
-#import "TFGRelativeDateFormatter.h"
-
 NSDate *date = ...;
 TFGRelativeDateFormatter *formatter = [[TFGRelativeDateFormatter alloc] init];
 NSString *relativeString = [formatter stringForDate:date];
+```
+
+The formatter is not thread safe (it uses `NSDateFormatter` internally) but a helper `+sharedFormatter` is provided to easily get a relative date string on the main thread.
+
+```objective-c
+NSDate *date = ...;
+NSString *relativeString = [[TFGRelativeDateFormatter sharedFormatter] stringForDate:date];
 ```
 
 ## Installation
@@ -21,6 +27,8 @@ TFGRelativeDateFormatter is available through
 to your Podfile:
 
     pod 'TFGRelativeDateFormatter'
+
+Alternatively, simply drag `TFGRelativeDateFormatter.h` and `TFGRelativeDateFormatter.m` to your project.
 
 ## Contact
 
