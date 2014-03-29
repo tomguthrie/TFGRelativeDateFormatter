@@ -1,7 +1,7 @@
-# TFGRelativeDateFormatter
-
-[![Build
-Status](https://travis-ci.org/tomguthrie/TFGRelativeDateFormatter.svg?branch=master)](https://travis-ci.org/tomguthrie/TFGRelativeDateFormatter)
+# [TFGRelativeDateFormatter](https://github.com/tomguthrie/TFGRelativeDateFormatter)
+[![Build Status](https://travis-ci.org/tomguthrie/TFGRelativeDateFormatter.svg?branch=master)](https://travis-ci.org/tomguthrie/TFGRelativeDateFormatter)
+[![Version](https://cocoapod-badges.herokuapp.com/v/TFGRelativeDateFormatter/badge.png)](http://cocoadocs.org/docsets/TFGRelativeDateFormatter)
+[![Platform](https://cocoapod-badges.herokuapp.com/p/TFGRelativeDateFormatter/badge.png)](http://cocoadocs.org/docsets/TFGRelativeDateFormatter)
 
 Mail.app style relative date formatter.
 
