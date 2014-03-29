@@ -5,6 +5,16 @@ Status](https://travis-ci.org/tomguthrie/TFGRelativeDateFormatter.svg?branch=mas
 
 Mail.app style relative date formatter.
 
+## Examples
+
+|           | en_GB      | en_US     |
+|-----------|:----------:|:---------:|
+| Same Day  | 13:45      | 1:45 PM   |
+| Yesterday | Yesterday  | Yesterday |
+| Same Week | Monday     | Monday    |
+| Same Year | 15 Mar     | Mar 15    |
+| Last Year | 22/04/2013 | 4/22/13   |
+
 ## Usage
 
 ```objective-c
