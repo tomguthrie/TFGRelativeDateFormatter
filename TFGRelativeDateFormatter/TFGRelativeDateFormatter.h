@@ -28,12 +28,13 @@
  * Instances of TFGRelativeDateFormatter can be used to get a localized relative date string
  * similar to how iOS' Mail.app displays the date of a mail.
  *
- * @warning TFGRelativeDateFormatter is not thread safe due to its use of NSDateFormatter.
+ * @warning TFGRelativeDateFormatter is not thread safe on iOS < 7.0 or OS X < 10.9
+ * due to its use of NSDateFormatter. More information can be found in the README.
  */
 @interface TFGRelativeDateFormatter : NSObject
 
 /**
- * Returns a shared instance of TFGRelativeDateFormatter for use on the main thread.
+ * Returns a shared instance of TFGRelativeDateFormatter.
  */
 + (instancetype)sharedFormatter;
 
