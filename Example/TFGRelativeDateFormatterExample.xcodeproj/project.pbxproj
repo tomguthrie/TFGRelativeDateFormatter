@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34F6B2E65F064B81B63D19D8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DBB748A3DF4C4C84ED8224 /* libPods.a */; };
+		0E737BF5F98846F9B5BE409F /* libPods-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16AA506B5C92411F99D47C04 /* libPods-osx.a */; };
+		AA95CFB5D4D645FBA33970FA /* libPods-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2889AC4E03F84AEBA00A58C0 /* libPods-ios.a */; };
+		E900396918EB6184003FB19C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E932CB9418DC6F1C00D8A287 /* XCTest.framework */; };
+		E900397818EB6293003FB19C /* TFGRelativeDateFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E900397718EB6293003FB19C /* TFGRelativeDateFormatterTests.m */; };
+		E900397918EB6293003FB19C /* TFGRelativeDateFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E900397718EB6293003FB19C /* TFGRelativeDateFormatterTests.m */; };
 		E932CB7318DC6F1C00D8A287 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E932CB7218DC6F1C00D8A287 /* Foundation.framework */; };
 		E932CB7518DC6F1C00D8A287 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E932CB7418DC6F1C00D8A287 /* CoreGraphics.framework */; };
 		E932CB7718DC6F1C00D8A287 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E932CB7618DC6F1C00D8A287 /* UIKit.framework */; };
@@ -19,9 +23,7 @@
 		E932CB9518DC6F1C00D8A287 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E932CB9418DC6F1C00D8A287 /* XCTest.framework */; };
 		E932CB9618DC6F1C00D8A287 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E932CB7218DC6F1C00D8A287 /* Foundation.framework */; };
 		E932CB9718DC6F1C00D8A287 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E932CB7618DC6F1C00D8A287 /* UIKit.framework */; };
-		E932CB9F18DC6F1C00D8A287 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E932CB9D18DC6F1C00D8A287 /* InfoPlist.strings */; };
 		E932CBAC18DC6F5700D8A287 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E932CBAB18DC6F5700D8A287 /* TableViewController.m */; };
-		E932CBAE18DC6F9B00D8A287 /* TFGRelativeDateFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E932CBAD18DC6F9B00D8A287 /* TFGRelativeDateFormatterTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16AA506B5C92411F99D47C04 /* libPods-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2889AC4E03F84AEBA00A58C0 /* libPods-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49DBB748A3DF4C4C84ED8224 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		62E5373743494075AEF3661F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		6F30E993EF6F4C018AF1C078 /* Pods-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.xcconfig"; path = "../Pods/Pods-ios.xcconfig"; sourceTree = "<group>"; };
+		DD56A69E12D24C7B804FA6B8 /* Pods-osx.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osx.xcconfig"; path = "../Pods/Pods-osx.xcconfig"; sourceTree = "<group>"; };
 		E7DFEC00B6F6492F9C1ED891 /* libPods-TFGRelativeDateFormatterExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TFGRelativeDateFormatterExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E900396818EB6184003FB19C /* OS X Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OS X Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E900396C18EB6184003FB19C /* OS X Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OS X Tests-Info.plist"; sourceTree = "<group>"; };
+		E900397718EB6293003FB19C /* TFGRelativeDateFormatterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFGRelativeDateFormatterTests.m; sourceTree = "<group>"; };
 		E932CB6F18DC6F1C00D8A287 /* TFGRelativeDateFormatterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFGRelativeDateFormatterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E932CB7218DC6F1C00D8A287 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E932CB7418DC6F1C00D8A287 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,16 +58,23 @@
 		E932CB8218DC6F1C00D8A287 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E932CB8518DC6F1C00D8A287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E932CB8D18DC6F1C00D8A287 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E932CB9318DC6F1C00D8A287 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E932CB9318DC6F1C00D8A287 /* iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E932CB9418DC6F1C00D8A287 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E932CB9C18DC6F1C00D8A287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E932CB9E18DC6F1C00D8A287 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E932CB9C18DC6F1C00D8A287 /* iOS Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS Tests-Info.plist"; sourceTree = "<group>"; };
 		E932CBAA18DC6F5700D8A287 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		E932CBAB18DC6F5700D8A287 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		E932CBAD18DC6F9B00D8A287 /* TFGRelativeDateFormatterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFGRelativeDateFormatterTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E900396518EB6184003FB19C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E900396918EB6184003FB19C /* XCTest.framework in Frameworks */,
+				0E737BF5F98846F9B5BE409F /* libPods-osx.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E932CB6C18DC6F1C00D8A287 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,7 +82,7 @@
 				E932CB7518DC6F1C00D8A287 /* CoreGraphics.framework in Frameworks */,
 				E932CB7718DC6F1C00D8A287 /* UIKit.framework in Frameworks */,
 				E932CB7318DC6F1C00D8A287 /* Foundation.framework in Frameworks */,
-				34F6B2E65F064B81B63D19D8 /* libPods.a in Frameworks */,
+				AA95CFB5D4D645FBA33970FA /* libPods-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,11 +99,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E900396A18EB6184003FB19C /* OS X Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E900396B18EB6184003FB19C /* Supporting Files */,
+			);
+			path = "OS X Tests";
+			sourceTree = "<group>";
+		};
+		E900396B18EB6184003FB19C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD56A69E12D24C7B804FA6B8 /* Pods-osx.xcconfig */,
+				E900396C18EB6184003FB19C /* OS X Tests-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E900397618EB6293003FB19C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E900397718EB6293003FB19C /* TFGRelativeDateFormatterTests.m */,
+			);
+			name = Tests;
+			path = ../Tests;
+			sourceTree = "<group>";
+		};
 		E932CB6618DC6F1C00D8A287 = {
 			isa = PBXGroup;
 			children = (
 				E932CB7818DC6F1C00D8A287 /* TFGRelativeDateFormatterExample */,
-				E932CB9A18DC6F1C00D8A287 /* Tests */,
+				E932CB9A18DC6F1C00D8A287 /* iOS Tests */,
+				E900396A18EB6184003FB19C /* OS X Tests */,
+				E900397618EB6293003FB19C /* Tests */,
 				E932CB7118DC6F1C00D8A287 /* Frameworks */,
 				E932CB7018DC6F1C00D8A287 /* Products */,
 			);
@@ -98,7 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				E932CB6F18DC6F1C00D8A287 /* TFGRelativeDateFormatterExample.app */,
-				E932CB9318DC6F1C00D8A287 /* Tests.xctest */,
+				E932CB9318DC6F1C00D8A287 /* iOS Tests.xctest */,
+				E900396818EB6184003FB19C /* OS X Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +156,8 @@
 				E932CB9418DC6F1C00D8A287 /* XCTest.framework */,
 				49DBB748A3DF4C4C84ED8224 /* libPods.a */,
 				E7DFEC00B6F6492F9C1ED891 /* libPods-TFGRelativeDateFormatterExample.a */,
+				2889AC4E03F84AEBA00A58C0 /* libPods-ios.a */,
+				16AA506B5C92411F99D47C04 /* libPods-osx.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,7 +179,7 @@
 		E932CB7918DC6F1C00D8A287 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				62E5373743494075AEF3661F /* Pods.xcconfig */,
+				6F30E993EF6F4C018AF1C078 /* Pods-ios.xcconfig */,
 				E932CB7A18DC6F1C00D8A287 /* Info.plist */,
 				E932CB7B18DC6F1C00D8A287 /* InfoPlist.strings */,
 				E932CB7E18DC6F1C00D8A287 /* main.m */,
@@ -142,20 +188,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E932CB9A18DC6F1C00D8A287 /* Tests */ = {
+		E932CB9A18DC6F1C00D8A287 /* iOS Tests */ = {
 			isa = PBXGroup;
 			children = (
 				E932CB9B18DC6F1C00D8A287 /* Supporting Files */,
-				E932CBAD18DC6F9B00D8A287 /* TFGRelativeDateFormatterTests.m */,
 			);
-			path = Tests;
+			path = "iOS Tests";
 			sourceTree = "<group>";
 		};
 		E932CB9B18DC6F1C00D8A287 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E932CB9C18DC6F1C00D8A287 /* Info.plist */,
-				E932CB9D18DC6F1C00D8A287 /* InfoPlist.strings */,
+				E932CB9C18DC6F1C00D8A287 /* iOS Tests-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -163,6 +207,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E900396718EB6184003FB19C /* OS X Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E900397518EB6184003FB19C /* Build configuration list for PBXNativeTarget "OS X Tests" */;
+			buildPhases = (
+				4B3D8BE219044221AF51206B /* Check Pods Manifest.lock */,
+				E900396418EB6184003FB19C /* Sources */,
+				E900396518EB6184003FB19C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OS X Tests";
+			productName = "OS X Tests";
+			productReference = E900396818EB6184003FB19C /* OS X Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E932CB6E18DC6F1C00D8A287 /* TFGRelativeDateFormatterExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E932CBA418DC6F1C00D8A287 /* Build configuration list for PBXNativeTarget "TFGRelativeDateFormatterExample" */;
@@ -182,9 +243,9 @@
 			productReference = E932CB6F18DC6F1C00D8A287 /* TFGRelativeDateFormatterExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E932CB9218DC6F1C00D8A287 /* Tests */ = {
+		E932CB9218DC6F1C00D8A287 /* iOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E932CBA718DC6F1C00D8A287 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildConfigurationList = E932CBA718DC6F1C00D8A287 /* Build configuration list for PBXNativeTarget "iOS Tests" */;
 			buildPhases = (
 				E932CB8F18DC6F1C00D8A287 /* Sources */,
 				E932CB9018DC6F1C00D8A287 /* Frameworks */,
@@ -195,9 +256,9 @@
 			dependencies = (
 				E932CB9918DC6F1C00D8A287 /* PBXTargetDependency */,
 			);
-			name = Tests;
+			name = "iOS Tests";
 			productName = TFGRelativeDateFormatterExampleTests;
-			productReference = E932CB9318DC6F1C00D8A287 /* Tests.xctest */;
+			productReference = E932CB9318DC6F1C00D8A287 /* iOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -209,6 +270,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Thomas Guthrie";
 				TargetAttributes = {
+					E900396718EB6184003FB19C = {
+						TestTargetID = E932CB6E18DC6F1C00D8A287;
+					};
 					E932CB9218DC6F1C00D8A287 = {
 						TestTargetID = E932CB6E18DC6F1C00D8A287;
 					};
@@ -228,7 +292,8 @@
 			projectRoot = "";
 			targets = (
 				E932CB6E18DC6F1C00D8A287 /* TFGRelativeDateFormatterExample */,
-				E932CB9218DC6F1C00D8A287 /* Tests */,
+				E932CB9218DC6F1C00D8A287 /* iOS Tests */,
+				E900396718EB6184003FB19C /* OS X Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,7 +313,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E932CB9F18DC6F1C00D8A287 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +331,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B3D8BE219044221AF51206B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		53E3C389185549DB94937A1C /* Check Pods Manifest.lock */ = {
@@ -288,6 +367,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E900396418EB6184003FB19C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E900397918EB6293003FB19C /* TFGRelativeDateFormatterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E932CB6B18DC6F1C00D8A287 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,7 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E932CBAE18DC6F9B00D8A287 /* TFGRelativeDateFormatterTests.m in Sources */,
+				E900397818EB6293003FB19C /* TFGRelativeDateFormatterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,17 +420,47 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		E932CB9D18DC6F1C00D8A287 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E932CB9E18DC6F1C00D8A287 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E900397318EB6184003FB19C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD56A69E12D24C7B804FA6B8 /* Pods-osx.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = "OS X Tests/OS X Tests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E900397418EB6184003FB19C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD56A69E12D24C7B804FA6B8 /* Pods-osx.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "OS X Tests/OS X Tests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		E932CBA218DC6F1C00D8A287 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -416,7 +533,7 @@
 		};
 		E932CBA518DC6F1C00D8A287 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62E5373743494075AEF3661F /* Pods.xcconfig */;
+			baseConfigurationReference = 6F30E993EF6F4C018AF1C078 /* Pods-ios.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -430,7 +547,7 @@
 		};
 		E932CBA618DC6F1C00D8A287 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62E5373743494075AEF3661F /* Pods.xcconfig */;
+			baseConfigurationReference = 6F30E993EF6F4C018AF1C078 /* Pods-ios.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -444,7 +561,7 @@
 		};
 		E932CBA818DC6F1C00D8A287 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62E5373743494075AEF3661F /* Pods.xcconfig */;
+			baseConfigurationReference = 6F30E993EF6F4C018AF1C078 /* Pods-ios.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TFGRelativeDateFormatterExample.app/TFGRelativeDateFormatterExample";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -455,7 +572,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TFGRelativeDateFormatterExample/Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = "iOS Tests/iOS Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -464,7 +581,7 @@
 		};
 		E932CBA918DC6F1C00D8A287 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62E5373743494075AEF3661F /* Pods.xcconfig */;
+			baseConfigurationReference = 6F30E993EF6F4C018AF1C078 /* Pods-ios.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TFGRelativeDateFormatterExample.app/TFGRelativeDateFormatterExample";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -474,7 +591,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TFGRelativeDateFormatterExample/Prefix.pch;
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = "iOS Tests/iOS Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -484,6 +601,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E900397518EB6184003FB19C /* Build configuration list for PBXNativeTarget "OS X Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E900397318EB6184003FB19C /* Debug */,
+				E900397418EB6184003FB19C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E932CB6A18DC6F1C00D8A287 /* Build configuration list for PBXProject "TFGRelativeDateFormatterExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -502,7 +628,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E932CBA718DC6F1C00D8A287 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+		E932CBA718DC6F1C00D8A287 /* Build configuration list for PBXNativeTarget "iOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E932CBA818DC6F1C00D8A287 /* Debug */,

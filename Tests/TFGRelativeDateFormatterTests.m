@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+
 #import <TFGRelativeDateFormatter/TFGRelativeDateFormatter.h>
 
 @interface TFGRelativeDateFormatterTests : XCTestCase {

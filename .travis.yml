@@ -5,3 +5,4 @@ before_install:
   - cd Example && pod install && cd $TRAVIS_BUILD_DIR
 script:
   - xcodebuild -workspace ./Example/TFGRelativeDateFormatterExample.xcworkspace -scheme 'TFGRelativeDateFormatterExample' -sdk 'iphonesimulator' -configuration Release clean test | xcpretty -c ; exit ${PIPESTATUS[0]}
+  - xcodebuild -workspace ./Example/TFGRelativeDateFormatterExample.xcworkspace -scheme 'OS X Tests' -sdk 'macosx10.9' -configuration Release clean test | xcpretty -c ; exit ${PIPESTATUS[0]}

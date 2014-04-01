@@ -8,15 +8,15 @@
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E081DA05161944E4A0C533BD"
-               BuildableName = "libPods.a"
-               BlueprintName = "Pods"
+               BlueprintIdentifier = "261C83B83D504F25AAE64576"
+               BuildableName = "libPods-ios.a"
+               BlueprintName = "Pods-ios"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E932CB9218DC6F1C00D8A287"
-               BuildableName = "Tests.xctest"
-               BlueprintName = "Tests"
+               BuildableName = "iOS Tests.xctest"
+               BlueprintName = "iOS Tests"
                ReferencedContainer = "container:TFGRelativeDateFormatterExample.xcodeproj">
             </BuildableReference>
          </TestableReference>

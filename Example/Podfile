@@ -1,2 +1,11 @@
-platform :ios, '7.0'
-pod 'TFGRelativeDateFormatter', :path => '../TFGRelativeDateFormatter.podspec'
+target :ios do
+  platform :ios, '7.0'
+  link_with 'TFGRelativeDateFormatterExample'
+  pod 'TFGRelativeDateFormatter', :path => '../TFGRelativeDateFormatter.podspec'
+end
+
+target :osx do
+  platform :osx, '10.9'
+  link_with 'OS X Tests'
+  pod 'TFGRelativeDateFormatter', :path => '../TFGRelativeDateFormatter.podspec'
+end
