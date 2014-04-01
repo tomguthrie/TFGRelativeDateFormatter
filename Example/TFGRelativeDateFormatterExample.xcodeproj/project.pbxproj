@@ -427,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD56A69E12D24C7B804FA6B8 /* Pods-osx.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
@@ -446,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD56A69E12D24C7B804FA6B8 /* Pods-osx.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
