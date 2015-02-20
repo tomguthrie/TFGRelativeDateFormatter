@@ -110,7 +110,7 @@
     NSDate *yesterday = [self.calendar dateByAddingComponents:components toDate:today options:0];
 
     if ([date compare:yesterday] >= NSOrderedSame) {
-        return NSLocalizedString(@"Yesterday", nil);
+        return NSLocalizedString(@"yesterday", nil);
     }
 
     [components setDay:-6];
