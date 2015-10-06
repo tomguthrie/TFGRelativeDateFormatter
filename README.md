@@ -2,6 +2,10 @@
 
 Mail.app style relative date formatter.
 
+**Note**: This repo will be deprecated in favour of
+[RelativeDateFormatter](https://github.com/tomguthrie/RelativeDateFormatter)
+some time in the future.
+
 ## Examples
 
 |           | en_GB      | en_US     |
